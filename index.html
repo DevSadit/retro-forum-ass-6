@@ -8,11 +8,768 @@
     <!-- tailwind uncle and daisy aunty -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- flowbite -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
+    <header class="mx-auto container">
+        <!-- nav -->
+        <div class="navbar bg-base-100 mt-14">
+            <div class="flex-1">
+                <a class="btn btn-ghost text-4xl font-black">daisyUI</a>
+            </div>
+            <div class="flex-none">
+                <ul class="menu menu-horizontal  space-x-3 ">
+                    <!-- home -->
+                    <li>
+                        <button data-tooltip-target="tooltip-hover" data-tooltip-trigger="hover" type="button"
+                            class="btn btn-circle border border-[#03071226]">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g id="Frame">
+                                    <path id="Vector"
+                                        d="M2.25 12.0001L11.204 3.04507C11.644 2.60607 12.356 2.60607 12.795 3.04507L21.75 12.0001M4.5 9.75007V19.8751C4.5 20.4961 5.004 21.0001 5.625 21.0001H9.75V16.1251C9.75 15.5041 10.254 15.0001 10.875 15.0001H13.125C13.746 15.0001 14.25 15.5041 14.25 16.1251V21.0001H18.375C18.996 21.0001 19.5 20.4961 19.5 19.8751V9.75007M8.25 21.0001H16.5"
+                                        stroke="#12132D" stroke-opacity="0.6" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </g>
+                            </svg>
+                        </button>
+
+                        <div id="tooltip-hover" role="tooltip"
+                            class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700">
+                            Home
+                            <div class="tooltip-arrow" data-popper-arrow></div>
+                        </div>
+                    </li>
+                    <!-- edit -->
+                    <li>
+                        <button data-tooltip-target="tooltip-hover" data-tooltip-trigger="hover" type="button"
+                            class="btn btn-circle border border-[#03071226]">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g id="Frame">
+                                    <path id="Vector"
+                                        d="M2.25 12.0001L11.204 3.04507C11.644 2.60607 12.356 2.60607 12.795 3.04507L21.75 12.0001M4.5 9.75007V19.8751C4.5 20.4961 5.004 21.0001 5.625 21.0001H9.75V16.1251C9.75 15.5041 10.254 15.0001 10.875 15.0001H13.125C13.746 15.0001 14.25 15.5041 14.25 16.1251V21.0001H18.375C18.996 21.0001 19.5 20.4961 19.5 19.8751V9.75007M8.25 21.0001H16.5"
+                                        stroke="#12132D" stroke-opacity="0.6" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </g>
+                            </svg>
+                        </button>
+
+                        <div id="tooltip-hover" role="tooltip"
+                            class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700">
+                            Home
+                            <div class="tooltip-arrow" data-popper-arrow></div>
+                        </div>
+                    </li>
+                    <!-- edit -->
+                    <li>
+                        <button data-tooltip-target="tooltip-hover" data-tooltip-trigger="hover" type="button"
+                            class="btn btn-circle border border-[#03071226]">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g id="Frame">
+                                    <path id="Vector"
+                                        d="M2.25 12.0001L11.204 3.04507C11.644 2.60607 12.356 2.60607 12.795 3.04507L21.75 12.0001M4.5 9.75007V19.8751C4.5 20.4961 5.004 21.0001 5.625 21.0001H9.75V16.1251C9.75 15.5041 10.254 15.0001 10.875 15.0001H13.125C13.746 15.0001 14.25 15.5041 14.25 16.1251V21.0001H18.375C18.996 21.0001 19.5 20.4961 19.5 19.8751V9.75007M8.25 21.0001H16.5"
+                                        stroke="#12132D" stroke-opacity="0.6" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </g>
+                            </svg>
+                        </button>
+
+                        <div id="tooltip-hover" role="tooltip"
+                            class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700">
+                            Home
+                            <div class="tooltip-arrow" data-popper-arrow></div>
+                        </div>
+                    </li>
+                    <!-- edit -->
+                    <li>
+                        <button data-tooltip-target="tooltip-hover" data-tooltip-trigger="hover" type="button"
+                            class="btn btn-circle border border-[#03071226]">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g id="Frame">
+                                    <path id="Vector"
+                                        d="M2.25 12.0001L11.204 3.04507C11.644 2.60607 12.356 2.60607 12.795 3.04507L21.75 12.0001M4.5 9.75007V19.8751C4.5 20.4961 5.004 21.0001 5.625 21.0001H9.75V16.1251C9.75 15.5041 10.254 15.0001 10.875 15.0001H13.125C13.746 15.0001 14.25 15.5041 14.25 16.1251V21.0001H18.375C18.996 21.0001 19.5 20.4961 19.5 19.8751V9.75007M8.25 21.0001H16.5"
+                                        stroke="#12132D" stroke-opacity="0.6" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </g>
+                            </svg>
+                        </button>
+
+                        <div id="tooltip-hover" role="tooltip"
+                            class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700">
+                            Home
+                            <div class="tooltip-arrow" data-popper-arrow></div>
+                        </div>
+                    </li>
+                    <li>
+                        <button class="btn btn-active bg-[#797DFC] rounded-full text-white text-xl font-bold">Sign
+                            In</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- banner -->
+        <div class="bg-[#12132D] rounded-lg flex p-24 justify-between mt-14 bg-cover bg-center h-[600px]"
+            style="background-image: url('images/bgbanner.png');">
+            <div class="space-y-8">
+                <h1 class="font-black  text-white text-6xl ">Welcome to the<br><span
+                        class="text-[#797DFCA1]">ReTro</span> Forum</h1>
+                <p class="text-white leading-10 text-xl">Share your favorite opinion and win and wp <br> forum coffee
+                    mug!</p>
+
+
+                <div class="relative">
+                    <input type="text" class="rounded-full h-14 w-full" placeholder="Search here anything">
+
+                    <button
+                        class="absolute btn btn-active bg-[#797DFC] rounded-full text-white text-xl font-bold border-none right-1 top-1">Search</button>
+                </div>
+
+
+            </div>
+            <div class="bg-white p-12 rounded-lg text-2xl font-medium space-y-3 h-[290px] ">
+                <div class="flex justify-between gap-x-14">
+                    <p>Registered Users</p>
+                    <p>01</p>
+                </div>
+                <div class="flex justify-between">
+                    <p>Forum</p>
+                    <p>05</p>
+                </div>
+                <div class="flex justify-between">
+                    <p>Topics</p>
+                    <p>01</p>
+                </div>
+                <div class="flex justify-between">
+                    <p>Replies</p>
+                    <p>01</p>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="mx-auto container ">
+        <section class="mt-24">
+            <h1 class="font-black text-4xl text-center">Let’s Discuss</h1>
+            <p class="text-center text-[#12132D99] font-normal text-lg my-6">Yes, you can run unit tests and view the
+                results directly within the app. The integrated testing features allow for a
+                streamlined .</p>
+
+                <!-- khela hbe -->
+            <div class="flex">
+                <div class=""><!--eta main cards -->
+                    <!-- c21 -->
+                    <div class=" p-10 bg-[#797dfc1a] border border-[#797DFC] rounded-lg shadow w-3/4 mt-6">
+                        <div class="flex gap-x-6">
+                            <!-- indicator -->
+                            <div class="indicator">
+                                <span class="indicator-item badge bg-green-600"></span>
+                                <div class="grid w-[70px] h-[70px] bg-base-300 place-items-center rounded-lg"><img src=""></div>
+                            </div>
+
+                            <!-- whole card body -->
+                            <div class="flex-1">
+                                <div class="flex gap-x-5 ">
+                                    <p>#Music</p>
+                                    <p>Author : Awlad Hossain</p>
+                                </div>
+                                <h5 class="mt-3 text-xl font-bold">10 Kids Unaware of Their Halloween Costume
+                                </h5>
+
+                                <p class="mt-4 text-base  sm:text-lg">It’s one thing to subject yourself to ha Halloween
+                                    costume
+                                    mishap because, <br> hey that’s your prerogative</p>
+                                <hr class="border-dashed mt-5 bg-black">
+                                <div class="flex justify-between mt-5">
+                                    <div class="flex items-center justify-start gap-x-6">
+                                        <div class="flex gap-x-1 items-center">
+                                            <i class="fa-regular fa-message"></i>
+                                            <p>560</p>
+                                        </div>
+                                        <div class="flex gap-x-1 items-center">
+                                            <i class="fa-regular fa-eye"></i>
+                                            <p>1,568</p>
+                                        </div>
+                                        <div class="flex gap-x-1 items-center">
+                                            <i class="fa-regular fa-clock"></i>
+                                            <p>5 min</p>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <button>
+                                            <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <g id="email 1" clip-path="url(#clip0_57_425)">
+                                                    <g id="Group">
+                                                        <g id="Group_2">
+                                                            <path id="Vector"
+                                                                d="M13.9998 0C6.26805 0 9.15527e-05 6.26814 9.15527e-05 13.9999C9.15527e-05 21.7314 6.26805 28 13.9998 28C21.7315 28 27.9999 21.7314 27.9999 13.9999C27.9999 6.26814 21.7315 0 13.9998 0ZM14 4.91741L22.2847 10.0835H5.71542L14 4.91741ZM22.3879 18.333H22.3871C22.3871 19.1616 21.7155 19.8331 20.887 19.8331H7.1131C6.28447 19.8331 5.61303 19.1615 5.61303 18.333V10.4122C5.61303 10.3245 5.62199 10.2393 5.63655 10.1556L13.552 15.0914C13.5617 15.0975 13.5721 15.1016 13.5821 15.1072C13.5925 15.113 13.6032 15.1186 13.6138 15.1239C13.6697 15.1527 13.7273 15.176 13.7862 15.1912C13.7923 15.1929 13.7983 15.1936 13.8044 15.195C13.869 15.2102 13.9344 15.2197 13.9998 15.2197H14.0002C14.0007 15.2197 14.0012 15.2197 14.0012 15.2197C14.0665 15.2197 14.1319 15.2105 14.1965 15.195C14.2026 15.1935 14.2086 15.1929 14.2147 15.1912C14.2735 15.176 14.3309 15.1527 14.3871 15.1239C14.3977 15.1186 14.4084 15.113 14.4188 15.1072C14.4287 15.1016 14.4392 15.0975 14.4489 15.0914L22.3644 10.1556C22.3789 10.2393 22.3879 10.3244 22.3879 10.4122V18.333Z"
+                                                                fill="#10B981" />
+                                                        </g>
+                                                    </g>
+                                                </g>
+                                                <defs>
+                                                    <clipPath id="clip0_57_425">
+                                                        <rect width="28" height="28" fill="white" />
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
+                                        </button>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- c2 -->
+                    <div class=" p-10 bg-[#797dfc1a] border border-[#797DFC] rounded-lg shadow w-3/4 mt-6">
+                        <div class="flex gap-x-6">
+                            <!-- indicator -->
+                            <div class="indicator">
+                                <span class="indicator-item badge bg-green-600"></span>
+                                <div class="grid w-[70px] h-[70px] bg-base-300 place-items-center rounded-lg"><img src=""></div>
+                            </div>
+
+                            <!-- whole card body -->
+                            <div class="flex-1">
+                                <div class="flex gap-x-5 ">
+                                    <p>#Music</p>
+                                    <p>Author : Awlad Hossain</p>
+                                </div>
+                                <h5 class="mt-3 text-xl font-bold">10 Kids Unaware of Their Halloween Costume
+                                </h5>
+
+                                <p class="mt-4 text-base  sm:text-lg">It’s one thing to subject yourself to ha Halloween
+                                    costume
+                                    mishap because, <br> hey that’s your prerogative</p>
+                                <hr class="border-dashed mt-5 bg-black">
+                                <div class="flex justify-between mt-5">
+                                    <div class="flex items-center justify-start gap-x-6">
+                                        <div class="flex gap-x-1 items-center">
+                                            <i class="fa-regular fa-message"></i>
+                                            <p>560</p>
+                                        </div>
+                                        <div class="flex gap-x-1 items-center">
+                                            <i class="fa-regular fa-eye"></i>
+                                            <p>1,568</p>
+                                        </div>
+                                        <div class="flex gap-x-1 items-center">
+                                            <i class="fa-regular fa-clock"></i>
+                                            <p>5 min</p>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <button>
+                                            <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <g id="email 1" clip-path="url(#clip0_57_425)">
+                                                    <g id="Group">
+                                                        <g id="Group_2">
+                                                            <path id="Vector"
+                                                                d="M13.9998 0C6.26805 0 9.15527e-05 6.26814 9.15527e-05 13.9999C9.15527e-05 21.7314 6.26805 28 13.9998 28C21.7315 28 27.9999 21.7314 27.9999 13.9999C27.9999 6.26814 21.7315 0 13.9998 0ZM14 4.91741L22.2847 10.0835H5.71542L14 4.91741ZM22.3879 18.333H22.3871C22.3871 19.1616 21.7155 19.8331 20.887 19.8331H7.1131C6.28447 19.8331 5.61303 19.1615 5.61303 18.333V10.4122C5.61303 10.3245 5.62199 10.2393 5.63655 10.1556L13.552 15.0914C13.5617 15.0975 13.5721 15.1016 13.5821 15.1072C13.5925 15.113 13.6032 15.1186 13.6138 15.1239C13.6697 15.1527 13.7273 15.176 13.7862 15.1912C13.7923 15.1929 13.7983 15.1936 13.8044 15.195C13.869 15.2102 13.9344 15.2197 13.9998 15.2197H14.0002C14.0007 15.2197 14.0012 15.2197 14.0012 15.2197C14.0665 15.2197 14.1319 15.2105 14.1965 15.195C14.2026 15.1935 14.2086 15.1929 14.2147 15.1912C14.2735 15.176 14.3309 15.1527 14.3871 15.1239C14.3977 15.1186 14.4084 15.113 14.4188 15.1072C14.4287 15.1016 14.4392 15.0975 14.4489 15.0914L22.3644 10.1556C22.3789 10.2393 22.3879 10.3244 22.3879 10.4122V18.333Z"
+                                                                fill="#10B981" />
+                                                        </g>
+                                                    </g>
+                                                </g>
+                                                <defs>
+                                                    <clipPath id="clip0_57_425">
+                                                        <rect width="28" height="28" fill="white" />
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
+                                        </button>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- c3 -->
+                    <div class=" p-10 bg-[#797dfc1a] border border-[#797DFC] rounded-lg shadow w-3/4 mt-6">
+                        <div class="flex gap-x-6">
+                            <!-- indicator -->
+                            <div class="indicator">
+                                <span class="indicator-item badge bg-green-600"></span>
+                                <div class="grid w-[70px] h-[70px] bg-base-300 place-items-center rounded-lg"><img src=""></div>
+                            </div>
+
+                            <!-- whole card body -->
+                            <div class="flex-1">
+                                <div class="flex gap-x-5 ">
+                                    <p>#Music</p>
+                                    <p>Author : Awlad Hossain</p>
+                                </div>
+                                <h5 class="mt-3 text-xl font-bold">10 Kids Unaware of Their Halloween Costume
+                                </h5>
+
+                                <p class="mt-4 text-base  sm:text-lg">It’s one thing to subject yourself to ha Halloween
+                                    costume
+                                    mishap because, <br> hey that’s your prerogative</p>
+                                <hr class="border-dashed mt-5 bg-black">
+                                <div class="flex justify-between mt-5">
+                                    <div class="flex items-center justify-start gap-x-6">
+                                        <div class="flex gap-x-1 items-center">
+                                            <i class="fa-regular fa-message"></i>
+                                            <p>560</p>
+                                        </div>
+                                        <div class="flex gap-x-1 items-center">
+                                            <i class="fa-regular fa-eye"></i>
+                                            <p>1,568</p>
+                                        </div>
+                                        <div class="flex gap-x-1 items-center">
+                                            <i class="fa-regular fa-clock"></i>
+                                            <p>5 min</p>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <button>
+                                            <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <g id="email 1" clip-path="url(#clip0_57_425)">
+                                                    <g id="Group">
+                                                        <g id="Group_2">
+                                                            <path id="Vector"
+                                                                d="M13.9998 0C6.26805 0 9.15527e-05 6.26814 9.15527e-05 13.9999C9.15527e-05 21.7314 6.26805 28 13.9998 28C21.7315 28 27.9999 21.7314 27.9999 13.9999C27.9999 6.26814 21.7315 0 13.9998 0ZM14 4.91741L22.2847 10.0835H5.71542L14 4.91741ZM22.3879 18.333H22.3871C22.3871 19.1616 21.7155 19.8331 20.887 19.8331H7.1131C6.28447 19.8331 5.61303 19.1615 5.61303 18.333V10.4122C5.61303 10.3245 5.62199 10.2393 5.63655 10.1556L13.552 15.0914C13.5617 15.0975 13.5721 15.1016 13.5821 15.1072C13.5925 15.113 13.6032 15.1186 13.6138 15.1239C13.6697 15.1527 13.7273 15.176 13.7862 15.1912C13.7923 15.1929 13.7983 15.1936 13.8044 15.195C13.869 15.2102 13.9344 15.2197 13.9998 15.2197H14.0002C14.0007 15.2197 14.0012 15.2197 14.0012 15.2197C14.0665 15.2197 14.1319 15.2105 14.1965 15.195C14.2026 15.1935 14.2086 15.1929 14.2147 15.1912C14.2735 15.176 14.3309 15.1527 14.3871 15.1239C14.3977 15.1186 14.4084 15.113 14.4188 15.1072C14.4287 15.1016 14.4392 15.0975 14.4489 15.0914L22.3644 10.1556C22.3789 10.2393 22.3879 10.3244 22.3879 10.4122V18.333Z"
+                                                                fill="#10B981" />
+                                                        </g>
+                                                    </g>
+                                                </g>
+                                                <defs>
+                                                    <clipPath id="clip0_57_425">
+                                                        <rect width="28" height="28" fill="white" />
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
+                                        </button>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- c4 -->
+                    <div class=" p-10 bg-[#797dfc1a] border border-[#797DFC] rounded-lg shadow w-3/4 mt-6">
+                        <div class="flex gap-x-6">
+                            <!-- indicator -->
+                            <div class="indicator">
+                                <span class="indicator-item badge bg-green-600"></span>
+                                <div class="grid w-[70px] h-[70px] bg-base-300 place-items-center rounded-lg"><img src=""></div>
+                            </div>
+
+                            <!-- whole card body -->
+                            <div class="flex-1">
+                                <div class="flex gap-x-5 ">
+                                    <p>#Music</p>
+                                    <p>Author : Awlad Hossain</p>
+                                </div>
+                                <h5 class="mt-3 text-xl font-bold">10 Kids Unaware of Their Halloween Costume
+                                </h5>
+
+                                <p class="mt-4 text-base  sm:text-lg">It’s one thing to subject yourself to ha Halloween
+                                    costume
+                                    mishap because, <br> hey that’s your prerogative</p>
+                                <hr class="border-dashed mt-5 bg-black">
+                                <div class="flex justify-between mt-5">
+                                    <div class="flex items-center justify-start gap-x-6">
+                                        <div class="flex gap-x-1 items-center">
+                                            <i class="fa-regular fa-message"></i>
+                                            <p>560</p>
+                                        </div>
+                                        <div class="flex gap-x-1 items-center">
+                                            <i class="fa-regular fa-eye"></i>
+                                            <p>1,568</p>
+                                        </div>
+                                        <div class="flex gap-x-1 items-center">
+                                            <i class="fa-regular fa-clock"></i>
+                                            <p>5 min</p>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <button>
+                                            <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <g id="email 1" clip-path="url(#clip0_57_425)">
+                                                    <g id="Group">
+                                                        <g id="Group_2">
+                                                            <path id="Vector"
+                                                                d="M13.9998 0C6.26805 0 9.15527e-05 6.26814 9.15527e-05 13.9999C9.15527e-05 21.7314 6.26805 28 13.9998 28C21.7315 28 27.9999 21.7314 27.9999 13.9999C27.9999 6.26814 21.7315 0 13.9998 0ZM14 4.91741L22.2847 10.0835H5.71542L14 4.91741ZM22.3879 18.333H22.3871C22.3871 19.1616 21.7155 19.8331 20.887 19.8331H7.1131C6.28447 19.8331 5.61303 19.1615 5.61303 18.333V10.4122C5.61303 10.3245 5.62199 10.2393 5.63655 10.1556L13.552 15.0914C13.5617 15.0975 13.5721 15.1016 13.5821 15.1072C13.5925 15.113 13.6032 15.1186 13.6138 15.1239C13.6697 15.1527 13.7273 15.176 13.7862 15.1912C13.7923 15.1929 13.7983 15.1936 13.8044 15.195C13.869 15.2102 13.9344 15.2197 13.9998 15.2197H14.0002C14.0007 15.2197 14.0012 15.2197 14.0012 15.2197C14.0665 15.2197 14.1319 15.2105 14.1965 15.195C14.2026 15.1935 14.2086 15.1929 14.2147 15.1912C14.2735 15.176 14.3309 15.1527 14.3871 15.1239C14.3977 15.1186 14.4084 15.113 14.4188 15.1072C14.4287 15.1016 14.4392 15.0975 14.4489 15.0914L22.3644 10.1556C22.3789 10.2393 22.3879 10.3244 22.3879 10.4122V18.333Z"
+                                                                fill="#10B981" />
+                                                        </g>
+                                                    </g>
+                                                </g>
+                                                <defs>
+                                                    <clipPath id="clip0_57_425">
+                                                        <rect width="28" height="28" fill="white" />
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
+                                        </button>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- c5 -->
+                    <div class=" p-10 bg-[#797dfc1a] border border-[#797DFC] rounded-lg shadow w-3/4 mt-6">
+                        <div class="flex gap-x-6">
+                            <!-- indicator -->
+                            <div class="indicator">
+                                <span class="indicator-item badge bg-green-600"></span>
+                                <div class="grid w-[70px] h-[70px] bg-base-300 place-items-center rounded-lg"><img src=""></div>
+                            </div>
+
+                            <!-- whole card body -->
+                            <div class="flex-1">
+                                <div class="flex gap-x-5 ">
+                                    <p>#Music</p>
+                                    <p>Author : Awlad Hossain</p>
+                                </div>
+                                <h5 class="mt-3 text-xl font-bold">10 Kids Unaware of Their Halloween Costume
+                                </h5>
+
+                                <p class="mt-4 text-base  sm:text-lg">It’s one thing to subject yourself to ha Halloween
+                                    costume
+                                    mishap because, <br> hey that’s your prerogative</p>
+                                <hr class="border-dashed mt-5 bg-black">
+                                <div class="flex justify-between mt-5">
+                                    <div class="flex items-center justify-start gap-x-6">
+                                        <div class="flex gap-x-1 items-center">
+                                            <i class="fa-regular fa-message"></i>
+                                            <p>560</p>
+                                        </div>
+                                        <div class="flex gap-x-1 items-center">
+                                            <i class="fa-regular fa-eye"></i>
+                                            <p>1,568</p>
+                                        </div>
+                                        <div class="flex gap-x-1 items-center">
+                                            <i class="fa-regular fa-clock"></i>
+                                            <p>5 min</p>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <button>
+                                            <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <g id="email 1" clip-path="url(#clip0_57_425)">
+                                                    <g id="Group">
+                                                        <g id="Group_2">
+                                                            <path id="Vector"
+                                                                d="M13.9998 0C6.26805 0 9.15527e-05 6.26814 9.15527e-05 13.9999C9.15527e-05 21.7314 6.26805 28 13.9998 28C21.7315 28 27.9999 21.7314 27.9999 13.9999C27.9999 6.26814 21.7315 0 13.9998 0ZM14 4.91741L22.2847 10.0835H5.71542L14 4.91741ZM22.3879 18.333H22.3871C22.3871 19.1616 21.7155 19.8331 20.887 19.8331H7.1131C6.28447 19.8331 5.61303 19.1615 5.61303 18.333V10.4122C5.61303 10.3245 5.62199 10.2393 5.63655 10.1556L13.552 15.0914C13.5617 15.0975 13.5721 15.1016 13.5821 15.1072C13.5925 15.113 13.6032 15.1186 13.6138 15.1239C13.6697 15.1527 13.7273 15.176 13.7862 15.1912C13.7923 15.1929 13.7983 15.1936 13.8044 15.195C13.869 15.2102 13.9344 15.2197 13.9998 15.2197H14.0002C14.0007 15.2197 14.0012 15.2197 14.0012 15.2197C14.0665 15.2197 14.1319 15.2105 14.1965 15.195C14.2026 15.1935 14.2086 15.1929 14.2147 15.1912C14.2735 15.176 14.3309 15.1527 14.3871 15.1239C14.3977 15.1186 14.4084 15.113 14.4188 15.1072C14.4287 15.1016 14.4392 15.0975 14.4489 15.0914L22.3644 10.1556C22.3789 10.2393 22.3879 10.3244 22.3879 10.4122V18.333Z"
+                                                                fill="#10B981" />
+                                                        </g>
+                                                    </g>
+                                                </g>
+                                                <defs>
+                                                    <clipPath id="clip0_57_425">
+                                                        <rect width="28" height="28" fill="white" />
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
+                                        </button>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- c6 -->
+                    <div class=" p-10 bg-[#797dfc1a] border border-[#797DFC] rounded-lg shadow w-3/4 mt-6">
+                        <div class="flex gap-x-6">
+                            <!-- indicator -->
+                            <div class="indicator">
+                                <span class="indicator-item badge bg-green-600"></span>
+                                <div class="grid w-[70px] h-[70px] bg-base-300 place-items-center rounded-lg"><img src=""></div>
+                            </div>
+
+                            <!-- whole card body -->
+                            <div class="flex-1">
+                                <div class="flex gap-x-5 ">
+                                    <p>#Music</p>
+                                    <p>Author : Awlad Hossain</p>
+                                </div>
+                                <h5 class="mt-3 text-xl font-bold">10 Kids Unaware of Their Halloween Costume
+                                </h5>
+
+                                <p class="mt-4 text-base  sm:text-lg">It’s one thing to subject yourself to ha Halloween
+                                    costume
+                                    mishap because, <br> hey that’s your prerogative</p>
+                                <hr class="border-dashed mt-5 bg-black">
+                                <div class="flex justify-between mt-5">
+                                    <div class="flex items-center justify-start gap-x-6">
+                                        <div class="flex gap-x-1 items-center">
+                                            <i class="fa-regular fa-message"></i>
+                                            <p>560</p>
+                                        </div>
+                                        <div class="flex gap-x-1 items-center">
+                                            <i class="fa-regular fa-eye"></i>
+                                            <p>1,568</p>
+                                        </div>
+                                        <div class="flex gap-x-1 items-center">
+                                            <i class="fa-regular fa-clock"></i>
+                                            <p>5 min</p>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <button>
+                                            <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <g id="email 1" clip-path="url(#clip0_57_425)">
+                                                    <g id="Group">
+                                                        <g id="Group_2">
+                                                            <path id="Vector"
+                                                                d="M13.9998 0C6.26805 0 9.15527e-05 6.26814 9.15527e-05 13.9999C9.15527e-05 21.7314 6.26805 28 13.9998 28C21.7315 28 27.9999 21.7314 27.9999 13.9999C27.9999 6.26814 21.7315 0 13.9998 0ZM14 4.91741L22.2847 10.0835H5.71542L14 4.91741ZM22.3879 18.333H22.3871C22.3871 19.1616 21.7155 19.8331 20.887 19.8331H7.1131C6.28447 19.8331 5.61303 19.1615 5.61303 18.333V10.4122C5.61303 10.3245 5.62199 10.2393 5.63655 10.1556L13.552 15.0914C13.5617 15.0975 13.5721 15.1016 13.5821 15.1072C13.5925 15.113 13.6032 15.1186 13.6138 15.1239C13.6697 15.1527 13.7273 15.176 13.7862 15.1912C13.7923 15.1929 13.7983 15.1936 13.8044 15.195C13.869 15.2102 13.9344 15.2197 13.9998 15.2197H14.0002C14.0007 15.2197 14.0012 15.2197 14.0012 15.2197C14.0665 15.2197 14.1319 15.2105 14.1965 15.195C14.2026 15.1935 14.2086 15.1929 14.2147 15.1912C14.2735 15.176 14.3309 15.1527 14.3871 15.1239C14.3977 15.1186 14.4084 15.113 14.4188 15.1072C14.4287 15.1016 14.4392 15.0975 14.4489 15.0914L22.3644 10.1556C22.3789 10.2393 22.3879 10.3244 22.3879 10.4122V18.333Z"
+                                                                fill="#10B981" />
+                                                        </g>
+                                                    </g>
+                                                </g>
+                                                <defs>
+                                                    <clipPath id="clip0_57_425">
+                                                        <rect width="28" height="28" fill="white" />
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
+                                        </button>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="p-6 bg-[#12132D0D] h-[370px] w-auto rounded-lg"> <!-- eta dan side er coto box-->
+                    <div class="flex justify-between ">
+                        <div>
+                            <h4>Title</h4>
+                        </div>
+                        <div class="flex items-center gap-x-2">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g id="Frame" clip-path="url(#clip0_30_2429)">
+                                    <path id="Vector" d="M7 12L12 17L22 7" stroke="#3DCE09" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path id="Vector_2" d="M2 12L7 17M12 12L17 7" stroke="#3DCE09" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_30_2429">
+                                        <rect width="24" height="24" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                            <p>Mark as read (4)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="mt-24">
+            <div class="flex bg-[#12132D] rounded-lg p-24 justify-between">
+                <div class="text-white">
+                    <h1 class="font-black text-4xl text-left mb-4">Join Our Forum</h1>
+                    <p class="text-left font-normal text-lg mb-8 leading-8">Share your favorite opinion and win and wp
+                        forum coffee mug! Yes, you can<br>run unit tests and view the results directly
+                        within the app.</p>
+                    <button
+                        class="btn btn-active bg-[#797DFC] rounded-full text-white text-xl font-bold border-none">Registered
+                        Now</button>
+                </div>
+                <div>
+                    <img src="images/joinforum.png" alt="">
+                </div>
+            </div>
+        </section>
+        <section class="mt-24">
+            <h1 class="font-black text-4xl text-center mb-6">Latest Posts</h1>
+            <p class="text-center font-normal text-lg mb-12 leading-8">Yes, you can run unit tests and view the results
+                directly within the app. The <br> integrated testing features allow for a
+                streamlined .</p>
+            <div class="flex flex-col-1 lg:flex-cols-3 gap-x-6">
+                <!-- card1 -->
+                <div class="card bg-base-100 shadow-xl p-6">
+                    <figure class="">
+                        <img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes"
+                            class="rounded-xl" />
+                    </figure>
+
+                    <div class="">
+                        <div class="flex justify-start gap-x-3 mt-6">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g id="Frame" clip-path="url(#clip0_29_1881)">
+                                    <path id="Vector"
+                                        d="M4 7C4 6.46957 4.21071 5.96086 4.58579 5.58579C4.96086 5.21071 5.46957 5 6 5H18C18.5304 5 19.0391 5.21071 19.4142 5.58579C19.7893 5.96086 20 6.46957 20 7V19C20 19.5304 19.7893 20.0391 19.4142 20.4142C19.0391 20.7893 18.5304 21 18 21H6C5.46957 21 4.96086 20.7893 4.58579 20.4142C4.21071 20.0391 4 19.5304 4 19V7Z"
+                                        stroke="#12132D" stroke-opacity="0.6" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path id="Vector_2" d="M16 3V7" stroke="#12132D" stroke-opacity="0.6"
+                                        stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path id="Vector_3" d="M8 3V7" stroke="#12132D" stroke-opacity="0.6"
+                                        stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path id="Vector_4" d="M4 11H20" stroke="#12132D" stroke-opacity="0.6"
+                                        stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path id="Vector_5"
+                                        d="M11 16C11 16.2652 11.1054 16.5196 11.2929 16.7071C11.4804 16.8946 11.7348 17 12 17C12.2652 17 12.5196 16.8946 12.7071 16.7071C12.8946 16.5196 13 16.2652 13 16C13 15.7348 12.8946 15.4804 12.7071 15.2929C12.5196 15.1054 12.2652 15 12 15C11.7348 15 11.4804 15.1054 11.2929 15.2929C11.1054 15.4804 11 15.7348 11 16Z"
+                                        stroke="#12132D" stroke-opacity="0.6" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_29_1881">
+                                        <rect width="24" height="24" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                            <p>29 January 2024</p>
+                        </div>
+                        <h2 class="text-xl font-extrabold mt-4">What will a mars habitat force that impact in our daily
+                            life!!!</h2>
+                        <p class="mt-3 text-[#12132D99]">Yes, you can run unit tests and view the results directly
+                            within the app.</p>
+                        <div class="flex items-center gap-x-3 mt-4">
+                            <div class="w-10 ">
+                                <img class="rounded-full"
+                                    src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" />
+                            </div>
+                            <div>
+                                <h4 class="font-bold">Cameron Williamson</h4>
+                                <p>Unknown</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- card2 -->
+                <div class="card bg-base-100 shadow-xl p-6">
+                    <figure class="">
+                        <img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes"
+                            class="rounded-xl" />
+                    </figure>
+
+                    <div class="">
+                        <div class="flex justify-start gap-x-3 mt-6">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g id="Frame" clip-path="url(#clip0_29_1881)">
+                                    <path id="Vector"
+                                        d="M4 7C4 6.46957 4.21071 5.96086 4.58579 5.58579C4.96086 5.21071 5.46957 5 6 5H18C18.5304 5 19.0391 5.21071 19.4142 5.58579C19.7893 5.96086 20 6.46957 20 7V19C20 19.5304 19.7893 20.0391 19.4142 20.4142C19.0391 20.7893 18.5304 21 18 21H6C5.46957 21 4.96086 20.7893 4.58579 20.4142C4.21071 20.0391 4 19.5304 4 19V7Z"
+                                        stroke="#12132D" stroke-opacity="0.6" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path id="Vector_2" d="M16 3V7" stroke="#12132D" stroke-opacity="0.6"
+                                        stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path id="Vector_3" d="M8 3V7" stroke="#12132D" stroke-opacity="0.6"
+                                        stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path id="Vector_4" d="M4 11H20" stroke="#12132D" stroke-opacity="0.6"
+                                        stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path id="Vector_5"
+                                        d="M11 16C11 16.2652 11.1054 16.5196 11.2929 16.7071C11.4804 16.8946 11.7348 17 12 17C12.2652 17 12.5196 16.8946 12.7071 16.7071C12.8946 16.5196 13 16.2652 13 16C13 15.7348 12.8946 15.4804 12.7071 15.2929C12.5196 15.1054 12.2652 15 12 15C11.7348 15 11.4804 15.1054 11.2929 15.2929C11.1054 15.4804 11 15.7348 11 16Z"
+                                        stroke="#12132D" stroke-opacity="0.6" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_29_1881">
+                                        <rect width="24" height="24" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                            <p>29 January 2024</p>
+                        </div>
+                        <h2 class="text-xl font-extrabold mt-4">What will a mars habitat force that impact in our daily
+                            life!!!</h2>
+                        <p class="mt-3 text-[#12132D99]">Yes, you can run unit tests and view the results directly
+                            within the app.</p>
+                        <div class="flex items-center gap-x-3 mt-4">
+                            <div class="w-10 ">
+                                <img class="rounded-full"
+                                    src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" />
+                            </div>
+                            <div>
+                                <h4 class="font-bold">Cameron Williamson</h4>
+                                <p>Unknown</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- card3 -->
+                <div class="card bg-base-100 shadow-xl p-6">
+                    <figure class="">
+                        <img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes"
+                            class="rounded-xl" />
+                    </figure>
+
+                    <div class="">
+                        <div class="flex justify-start gap-x-3 mt-6">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g id="Frame" clip-path="url(#clip0_29_1881)">
+                                    <path id="Vector"
+                                        d="M4 7C4 6.46957 4.21071 5.96086 4.58579 5.58579C4.96086 5.21071 5.46957 5 6 5H18C18.5304 5 19.0391 5.21071 19.4142 5.58579C19.7893 5.96086 20 6.46957 20 7V19C20 19.5304 19.7893 20.0391 19.4142 20.4142C19.0391 20.7893 18.5304 21 18 21H6C5.46957 21 4.96086 20.7893 4.58579 20.4142C4.21071 20.0391 4 19.5304 4 19V7Z"
+                                        stroke="#12132D" stroke-opacity="0.6" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path id="Vector_2" d="M16 3V7" stroke="#12132D" stroke-opacity="0.6"
+                                        stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path id="Vector_3" d="M8 3V7" stroke="#12132D" stroke-opacity="0.6"
+                                        stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path id="Vector_4" d="M4 11H20" stroke="#12132D" stroke-opacity="0.6"
+                                        stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path id="Vector_5"
+                                        d="M11 16C11 16.2652 11.1054 16.5196 11.2929 16.7071C11.4804 16.8946 11.7348 17 12 17C12.2652 17 12.5196 16.8946 12.7071 16.7071C12.8946 16.5196 13 16.2652 13 16C13 15.7348 12.8946 15.4804 12.7071 15.2929C12.5196 15.1054 12.2652 15 12 15C11.7348 15 11.4804 15.1054 11.2929 15.2929C11.1054 15.4804 11 15.7348 11 16Z"
+                                        stroke="#12132D" stroke-opacity="0.6" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_29_1881">
+                                        <rect width="24" height="24" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                            <p>29 January 2024</p>
+                        </div>
+                        <h2 class="text-xl font-extrabold mt-4">What will a mars habitat force that impact in our daily
+                            life!!!</h2>
+                        <p class="mt-3 text-[#12132D99]">Yes, you can run unit tests and view the results directly
+                            within the app.</p>
+                        <div class="flex items-center gap-x-3 mt-4">
+                            <div class="w-10 ">
+                                <img class="rounded-full"
+                                    src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" />
+                            </div>
+                            <div>
+                                <h4 class="font-bold">Cameron Williamson</h4>
+                                <p>Unknown</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="py-24 bg-[#12132D0D]  text-center mt-24">
+        <h1 class="font-black text-4xl ">ReTro</h1>
+        <p class="mt-4">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of
+            <br> classical Latin literature
+            from 45 BC
+        </p>
+        <div class="space-x-3 text-center mt-8">
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-github"></i></a>
+        </div>
+        <div class="container mx-auto mt-12">
+            <hr class="bg-black">
+        </div>
+        <p class="font-light text-[#12132D80] mt-12">2017, All Rights Reserved.</p>
+    </footer>
     <!-- script -->
     <script src="style/script.js"></script>
+    <!-- flowbite -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
 </body>
 
 </html>
+<!-- indicator
+    <div class="indicator">
+  <span class="indicator-item badge badge-secondary"></span>
+  <div class="grid w-32 h-32 bg-base-300 place-items-center">content</div>
+</div>
+ -->
