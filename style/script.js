@@ -5,6 +5,7 @@ fetch(`https://openapi.programming-hero.com/api/retro-forum/posts`)
   .then((data) => displayPost(data.posts));
 
 function displayPost(data) {
+  
 //   console.log(data);
   const postCardBox = document.getElementById(`postCardBox`);
 
