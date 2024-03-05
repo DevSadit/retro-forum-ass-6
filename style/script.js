@@ -1,17 +1,13 @@
-// Lets discuss section
-
-fetch(`https://openapi.programming-hero.com/api/retro-forum/posts`)
-  .then((res) => res.json())
-  .then((data) => displayPost(data.posts));
+const discussCards = (inpTxt) => {
+  fetch(`https://openapi.programming-hero.com/api/retro-forum/posts`)
+    .then((res) => res.json())
+    .then((data) => {
+      displayPost(data.posts);
+    });
+};
 
 function displayPost(data) {
-  //   console.log(data);
   const postCardBox = document.getElementById(`postCardBox`);
-  const fnBtnarr = [];
-  function fnBtn(item) {
-    console.log(`clicked`, item);
-  }
-  // console.log(postCard)
   for (item of data) {
     // console.log(item);
     const newCards = document.createElement(`div`);
@@ -56,7 +52,7 @@ function displayPost(data) {
 </div>
 </div>
 <div>
-<button onclick="${() => fnBtn(item)}">
+<button onclick="addCartinSidebox('${item.title}','${item.view_count}')" >
 <svg width="28" height="28" viewBox="0 0 28 28" fill="none"
 xmlns="http://www.w3.org/2000/svg">
 <g id="email 1" clip-path="url(#clip0_57_425)">
@@ -84,6 +80,24 @@ fill="#10B981" />
     `;
     postCardBox.appendChild(newCards);
   }
+}
+// sidebox work
+function addCartinSidebox(title, view) {
+  // console.log(title, view)
+  const sideBox = document.getElementById(`sideBox`);
+  const miniCard = document.createElement(`div`);
+  miniCard.innerHTML = `
+<div class="flex justify-between bg-white rounded-lg p-4 mt-4">
+<div>
+<h3 class="font-semibold">${title}</h3>
+</div>
+<div class=" items-center gap-x-2 flex">
+<i class="fa-regular fa-eye"></i>
+<p>${view}</p>
+</div>
+</div>
+  `;
+  sideBox.appendChild(miniCard);
 }
 
 // Latest Posts Section
@@ -148,6 +162,9 @@ src="${item.profile_image}" />
 </div>
     `;
     latestPBox.appendChild(latestPCard);
-    console.log(item);
+    // console.log(item);
   }
 }
+
+// function call
+discussCards();

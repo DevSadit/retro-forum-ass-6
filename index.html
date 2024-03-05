@@ -20,7 +20,7 @@
 <body>
     <header class="mx-auto container">
         <!-- navbar -->
-        <div class="flex mt-14">
+        <div class="flex mt-14" >
             <div class="flex-1">
                 <a class=" text-4xl font-black cursor-pointer">ReTro</a>
             </div>
@@ -136,9 +136,9 @@
 
 
                 <div class="relative">
-                    <input type="text" class="rounded-full h-14 w-full" placeholder="Search here anything">
+                    <input type="text" class="rounded-full h-14 w-full" placeholder="Search here anything" id="input-feild">
 
-                    <button
+                    <button onclick="handleSearchbtn()" 
                         class="absolute btn btn-active bg-[#797DFC] rounded-full text-white text-xl font-bold border-none right-1 top-1">Search</button>
                 </div>
 
@@ -178,7 +178,7 @@
                 <div class="col-span-2" id="postCardBox"><!--eta main cards er box -->
 
                 </div>
-                <div class="p-6 bg-[#12132D0D] h-[370px] rounded-lg"> <!-- eta dan side er coto box-->
+                <div class=" p-6 bg-[#12132D0D] h-[650px] rounded-lg" id="sideBox"> <!-- eta dan side er coto box-->
                     <div class="flex justify-between ">
                         <div>
                             <h4>Title</h4>
@@ -202,7 +202,7 @@
                         </div>
                     </div>
                     <!-- content js fn -->
-                    <div class="flex justify-between bg-white rounded-lg p-4 mt-4">
+                    <!-- <div class="flex justify-between bg-white rounded-lg p-4 mt-4">
                         <div>
                             <h3 class="font-semibold">10 Kids Unaware of Their <br> Halloween Costume</h3>
                         </div>
@@ -210,7 +210,7 @@
                             <i class="fa-regular fa-eye"></i>
                             <p>1,568</p>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </section>
