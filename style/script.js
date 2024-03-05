@@ -1,5 +1,7 @@
-const discussCards = (inpTxt) => {
-  fetch(`https://openapi.programming-hero.com/api/retro-forum/posts`)
+// Let’s Discuss section
+const discussCards = (inpTxt = "") => {
+  // console.log(inpTxt);
+  fetch(`https://openapi.programming-hero.com/api/retro-forum/posts${inpTxt}`)
     .then((res) => res.json())
     .then((data) => {
       displayPost(data.posts);
@@ -8,8 +10,8 @@ const discussCards = (inpTxt) => {
 
 function displayPost(data) {
   const postCardBox = document.getElementById(`postCardBox`);
+  postCardBox.innerHTML = "";
   for (item of data) {
-    // console.log(item);
     const newCards = document.createElement(`div`);
 
     newCards.innerHTML = `
@@ -52,7 +54,9 @@ function displayPost(data) {
 </div>
 </div>
 <div>
-<button onclick="addCartinSidebox('${item.title}','${item.view_count}')" >
+<button onclick="addCartinSidebox('${item.title}','${
+      item.view_count
+    }')" id="btn">
 <svg width="28" height="28" viewBox="0 0 28 28" fill="none"
 xmlns="http://www.w3.org/2000/svg">
 <g id="email 1" clip-path="url(#clip0_57_425)">
@@ -80,6 +84,7 @@ fill="#10B981" />
     `;
     postCardBox.appendChild(newCards);
   }
+  toggleloader(false);
 }
 // sidebox work
 function addCartinSidebox(title, view) {
@@ -100,13 +105,33 @@ function addCartinSidebox(title, view) {
   sideBox.appendChild(miniCard);
 }
 
-// Latest Posts Section
+// searchbox work
+const handleSearchBtn = () => {
+  toggleloader(true);
+  const inputFeild = document.getElementById(`input-feild`).value;
+  // console.log(inputFeild)
+  discussCards(`?category=${inputFeild}`);
+};
 
-fetch(`https://openapi.programming-hero.com/api/retro-forum/latest-posts`)
-  .then((response) => response.json())
-  .then((result) => displayLatestPost(result));
+// loader work
+const toggleloader = (loading) => {
+  const loader = document.getElementById(`loader`);
+  if (loading) {
+    loader.classList.remove(`hidden`);
+  } else{
+    loader.classList.add(`hidden`);
+  }
+};
+
+// Latest Posts Section
+const latestCard = () => {
+  fetch(`https://openapi.programming-hero.com/api/retro-forum/latest-posts`)
+    .then((response) => response.json())
+    .then((result) => displayLatestPost(result));
+};
 
 function displayLatestPost(result) {
+  // console.log(result);
   const latestPBox = document.getElementById(`latestpbox`);
   for (item of result) {
     const latestPCard = document.createElement(`div`);
@@ -162,9 +187,9 @@ src="${item.profile_image}" />
 </div>
     `;
     latestPBox.appendChild(latestPCard);
-    // console.log(item);
   }
 }
 
 // function call
 discussCards();
+latestCard();

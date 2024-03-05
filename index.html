@@ -138,7 +138,7 @@
                 <div class="relative">
                     <input type="text" class="rounded-full h-14 w-full" placeholder="Search here anything" id="input-feild">
 
-                    <button onclick="handleSearchbtn()" 
+                    <button onclick="handleSearchBtn()" 
                         class="absolute btn btn-active bg-[#797DFC] rounded-full text-white text-xl font-bold border-none right-1 top-1">Search</button>
                 </div>
 
@@ -173,6 +173,10 @@
                 results directly within the app. The integrated testing features allow for a
                 streamlined .</p>
 
+                <!-- khelar age loading hbe -->
+                <div class="text-center my-56 hidden" id="loader"> 
+                    <span class="loading loading-bars loading-lg "></span>
+                </div>
             <!-- khela hbe -->
             <div class="grid grid-cols-1 lg:grid-cols-3 gap-5">
                 <div class="col-span-2" id="postCardBox"><!--eta main cards er box -->
@@ -198,7 +202,7 @@
                                     </clipPath>
                                 </defs>
                             </svg>
-                            <p>Mark as read (4)</p>
+                            <p>Mark as read</p>
                         </div>
                     </div>
                     <!-- content js fn -->
