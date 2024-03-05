@@ -20,11 +20,11 @@
 <body>
     <header class="mx-auto container">
         <!-- navbar -->
-        <div class="flex mt-14" >
-            <div class="flex-1">
-                <a class=" text-4xl font-black cursor-pointer">ReTro</a>
+        <div class="flex mt-14 items-center justify-between" >
+            <div class="lg:flex-1">
+                <a class=" lg:text-4xl text-3xl font-black cursor-pointer">ReTro</a>
             </div>
-            <div class="flex gap-x-5">
+            <div class="flex lg:gap-x-5 gap-x-2">
 
                 <!-- home -->
                 <div>
@@ -117,8 +117,8 @@
                     </div>
 
                 </div>
-                <!-- somossa -->
-                <button class="btn btn-active bg-[#797DFC] rounded-full text-white text-xl font-bold border-none">
+                <!-- sign in -->
+                <button class="btn btn-active bg-[#797DFC] rounded-full text-white text-sm lg:text-xl font-bold border-none">
                     Sign in
                 </button>
             </div>
@@ -126,9 +126,10 @@
 
 
         <!-- banner -->
-        <div class="bg-[#12132D] rounded-lg flex p-24 justify-between mt-14 bg-cover bg-center h-[600px]"
+        <div class="bg-[#12132D] rounded-lg flex lg:flex-row flex-col lg:gap-y-0 gap-y-5 p-24 justify-between mt-14 bg-cover bg-center "
             style="background-image: url('images/bgbanner.png');">
-            <div class="space-y-8">
+            <!-- banner txt -->
+            <div class="space-y-8 lg:text-left text-center">
                 <h1 class="font-black  text-white text-6xl ">Welcome to the<br><span
                         class="text-[#797DFCA1]">ReTro</span> Forum</h1>
                 <p class="text-white leading-10 text-xl">Share your favorite opinion and win and wp <br> forum coffee
@@ -139,11 +140,13 @@
                     <input type="text" class="rounded-full h-14 w-full" placeholder="Search here anything" id="input-feild">
 
                     <button onclick="handleSearchBtn()" 
-                        class="absolute btn btn-active bg-[#797DFC] rounded-full text-white text-xl font-bold border-none right-1 top-1">Search</button>
+                        class="absolute btn btn-active bg-[#797DFC] rounded-full text-white text-sm lg:text-xl font-bold border-none right-1 top-1">Search</button>
                 </div>
 
 
             </div>
+
+            <!-- banner card -->
             <div class="bg-white p-12 rounded-lg text-2xl font-medium space-y-3 h-[290px] ">
                 <div class="flex justify-between gap-x-14">
                     <p>Registered Users</p>
@@ -178,12 +181,12 @@
                     <span class="loading loading-bars loading-lg "></span>
                 </div>
             <!-- khela hbe -->
-            <div class="grid grid-cols-1 lg:grid-cols-3 gap-5">
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-5 lg:p-0 p-4">
                 <div class="col-span-2" id="postCardBox"><!--eta main cards er box -->
 
                 </div>
                 <div class=" p-6 bg-[#12132D0D] h-[650px] rounded-lg" id="sideBox"> <!-- eta dan side er coto box-->
-                    <div class="flex justify-between ">
+                    <div class="flex justify-between">
                         <div>
                             <h4>Title</h4>
                         </div>
@@ -222,7 +225,9 @@
 
         <!-- Join Our Forum section -->
         <section class="mt-24">
-            <div class="flex bg-[#12132D] rounded-lg p-24 justify-between">
+            <div class="flex lg:gap-y-0 gap-y-10 lg:flex-row flex-col bg-[#12132D] rounded-lg p-24 justify-between">
+
+                <!-- text -->
                 <div class="text-white">
                     <h1 class="font-black text-4xl text-left mb-4">Join Our Forum</h1>
                     <p class="text-left font-normal text-lg mb-8 leading-8">Share your favorite opinion and win and wp
@@ -232,6 +237,7 @@
                         class="btn btn-active bg-[#797DFC] rounded-full text-white text-xl font-bold border-none">Registered
                         Now</button>
                 </div>
+                <!-- image -->
                 <div>
                     <img src="images/joinforum.png" alt="">
                 </div>
@@ -245,9 +251,9 @@
             <p class="text-center font-normal text-lg mb-12 leading-8">Yes, you can run unit tests and view the results
                 directly within the app. The <br> integrated testing features allow for a
                 streamlined .</p>
-            <div class="flex flex-col-1 lg:flex-cols-3 gap-x-6" id="latestpbox">
+            <div class="grid grid-rows-1 lg:grid-cols-3 lg:gap-x-6 gap-y-6 lg:p-0 p-4" id="latestpbox">
                 <!-- card1 -->
-                <!-- <div class="card bg-base-100 shadow-xl p-6" >
+                 <!-- <div class="card bg-base-100 shadow-xl p-6" > 
                     <figure class="">
                         <img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes"
                             class="rounded-xl" />

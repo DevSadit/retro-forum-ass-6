@@ -19,9 +19,8 @@ function displayPost(data) {
 <div class="flex gap-x-6">
 <!-- indicator -->
 <div class="indicator">
-<span class="indicator-item badge ${
-      item.isActive ? "bg-green-600" : "bg-red-600"
-    }"></span>
+<span class="indicator-item badge 
+${item.isActive ? "bg-green-600" : "bg-red-600"}"></span>
 <div class="grid w-[70px] h-[70px] bg-base-300 place-items-center rounded-lg"><img class="rounded-lg" src="${
       item.image
     }"></div>
@@ -118,7 +117,7 @@ const toggleloader = (loading) => {
   const loader = document.getElementById(`loader`);
   if (loading) {
     loader.classList.remove(`hidden`);
-  } else{
+  } else {
     loader.classList.add(`hidden`);
   }
 };
