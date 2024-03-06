@@ -167,7 +167,11 @@ stroke-linejoin="round" />
 </clipPath>
 </defs>
 </svg>
-<p>${item.author.posted_date}</p>
+<p>${
+      item.author.hasOwnProperty(`posted_date`)
+        ? `${item.author.posted_date}`
+        : `Publish Date Not Found!`
+    }</p>
 </div>
 <h2 class="text-xl font-extrabold mt-4">${item.title}</h2>
 <p class="mt-3 text-[#12132D99]">Yes, you can run unit tests and view the results directly
@@ -179,7 +183,7 @@ src="${item.profile_image}" />
 </div>
 <div>
 <h4 class="font-bold">${item.author.name}</h4>
-<p>${item.author.designation}</p>
+<p>${item.author.hasOwnProperty(`designation`)? `${item.author.designation}` : `User Data Not Found`}</p>
 </div>
 </div>
 </div>
