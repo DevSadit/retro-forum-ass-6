@@ -53,9 +53,9 @@ ${item.isActive ? "bg-green-600" : "bg-red-600"}"></span>
 </div>
 </div>
 <div>
-<button onclick="addCartinSidebox('${item.title}','${
+<button onclick="addCartinSidebox('${item.title.replace("'", "")}','${
       item.view_count
-    }')" id="btn">
+    }');"">
 <svg width="28" height="28" viewBox="0 0 28 28" fill="none"
 xmlns="http://www.w3.org/2000/svg">
 <g id="email 1" clip-path="url(#clip0_57_425)">
@@ -170,7 +170,7 @@ stroke-linejoin="round" />
 <p>${
       item.author.hasOwnProperty(`posted_date`)
         ? `${item.author.posted_date}`
-        : `Publish Date Not Found!`
+        : `No publish date`
     }</p>
 </div>
 <h2 class="text-xl font-extrabold mt-4">${item.title}</h2>
@@ -183,7 +183,11 @@ src="${item.profile_image}" />
 </div>
 <div>
 <h4 class="font-bold">${item.author.name}</h4>
-<p>${item.author.hasOwnProperty(`designation`)? `${item.author.designation}` : `User Data Not Found`}</p>
+<p>${
+      item.author.hasOwnProperty(`designation`)
+        ? `${item.author.designation}`
+        : `Unknown`
+    }</p>
 </div>
 </div>
 </div>
